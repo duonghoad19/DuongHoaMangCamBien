@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Duong Cong Hoa</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="style1.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </head>
+    <body style="background-color: rgb(124, 137, 150);">
+        <header>Dương Công Hòa - B19DCDT084</header>
+    <div class="container_1">
+        <div class="row">
+            <div id="content" class="col nhietDo">
+             Nhiệt độ : <span id="valueTemperature"></span> <br>
+            <input id="inputValue" type="range" min ="1" max="10" onchange ="hamdoimau(event)">
+            </div>
+            <div class="col doAm">
+            <div class="row t1"> Độ ẩm</div>
+            <div class="row">80%</div>
+            </div>
+            <div class="col anhSang">
+            <div class="row t1">Ánh Sáng</div>
+            <div class="row">100 Lux</div>
+            </div>
+       </div>
+    
+        <div class="row">
+            <div class="col-8 dothi">
+                <div class="title">Biểu đồ
+                </div>
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="col-4 nutbam">
+                <div class="row nutbam1" id="led1">
+                <p style="text-align: center">LED 1</p>
+                <label class="switch">
+                <input type="checkbox">
+                <div class="slider"></div>
+                </label>
+            </div> 
+            <div class="row nutbam2" id="led2">
+                <div class="row nutbam2">LED 2</div>
+                <div class="row nutbam2">
+                <div class="button">
+                <input type="button" id="button" value="Button" style="color:grey; margin-left: 38% ;" onclick="changeColor(event)";>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="example.js"></script>    
+</body>
+</html>
